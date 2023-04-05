@@ -5,7 +5,7 @@ CREATE DATABASE SpotifyClone;
 CREATE TABLE SpotifyClone.subscription_plans(
   subscription_id INT AUTO_INCREMENT PRIMARY KEY,
   plan VARCHAR(50) NOT NULL,
-  price DOUBLE NOT NULL
+  price DECIMAL(4, 2) NOT NULL
 ) engine = InnoDB;
 
 CREATE TABLE SpotifyClone.users(
@@ -77,10 +77,10 @@ VALUES
   ('Martin Fowler', 46, 4, '2017-01-17'),
   ('Sandi Metz', 58, 4, '2018-04-29'),
   ('Paulo Freire', 19, 2, '2018-02-14'),
-  ('Bell Hooks', 26, 3, '2018-01-05'),
+  ('Bell Hooks', 26, 2, '2018-01-05'),
   ('Christopher Alexander', 85, 3, '2019-06-05'),
-  ('Judith Butler', 45, 4, '2020-05-13'),
-  ('Jorge Amado', 58, 4, '2017-02-17');
+  ('Judith Butler', 45, 3, '2020-05-13'),
+  ('Jorge Amado', 58, 3, '2017-02-17');
 
 INSERT INTO
   SpotifyClone.artists(artist_name)
